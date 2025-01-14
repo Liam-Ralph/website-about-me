@@ -1,0 +1,20 @@
+/* Variables */
+:root {
+
+    /* Colors */
+    --darkest-blue: #000814;
+    --dark-blue: #001429;
+    --medium-blue: #001F3D;
+    --light-blue: #002A52;
+    --yellow: #FFC200;
+
+    /* Fonts */
+    --serif: "Garamond", "Times New Roman", "serif";
+    --sans-serif: "Arial", "sans-serif";
+
+}
+
+/* Global Elements */
+body {
+    background-color: var(--darkest-blue)
+}
