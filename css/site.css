@@ -1,12 +1,18 @@
 /* Variables */
+
 :root {
 
     /* Colors */
-    --darkest-blue: #000814;
+
+    --darkest-blue: #000712;
     --dark-blue: #001429;
     --medium-blue: #001F3D;
-    --light-blue: #002A52;
+    --light-blue: #2C4F70;
+
     --yellow: #FFC200;
+    --off-black: #05050A;
+    --off-white: #E6E6E6;
+    --medium-grey: #8C8C8C;
 
     /* Fonts */
     --serif: "Garamond", "Times New Roman", "serif";
@@ -14,7 +20,88 @@
 
 }
 
+
 /* Global Elements */
+
 body {
-    background-color: var(--darkest-blue)
+    margin: 0px;
+    background-color: var(--darkest-blue);
+}
+h1 {
+    color: var(--medium-grey);
+    font-family: var(--sans-serif)
+}
+
+
+/* Classes */
+
+.site-header-side-text {
+    margin: 0px;
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    color: var(--medium-grey);
+    font-family: var(--sans-serif);
+}
+
+
+/* IDs */
+
+#site-header {
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    text-align: center;
+}
+
+#site-header-image{
+    width: 50px;
+    height: 50px;
+}
+
+#site-header-title{
+    margin: 0px;
+    margin-left: 20px;
+    font-size: 32px;
+    color: var(--yellow);
+    font-family: var(--sans-serif);
+    display: inline-block;
+    vertical-align: 35%;
+}
+
+#site-header-released{
+    top: 10px;
+}
+
+#site-header-version{
+    top: 28px;
+}
+
+#page-header {
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border: solid;
+    border-width: 0 0 2px 0;
+    border-color: var(--dark-blue);
+    background-color: var(--darkest-blue);
+}
+
+#footer {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    bottom: 0;
+    background-color: var(--off-black);
+}
+
+#content-body {
+    width: calc(90% - 100px);
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
 }
