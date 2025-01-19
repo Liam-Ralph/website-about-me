@@ -28,6 +28,10 @@ body {
     background-color: var(--darkest-blue);
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* Classes */
 
@@ -65,6 +69,30 @@ body {
     font-size: 18px;
     color: var(--medium-grey);
     font-family: var(--sans-serif);
+}
+
+.page-nav-box {
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: table;
+}
+.page-nav-box:hover {
+    background-color: var(--medium-blue);
+}
+.page-nav-icon {
+    margin: 5px;
+    height: 40px;
+    display: table-cell;
+}
+.page-nav-text {
+    color: var(--medium-grey);
+    font-family: var(--sans-serif);
+    font-size: 24px;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
@@ -116,9 +144,9 @@ body {
 }
 
 #sidebar {
-    width: calc(15% - 40px);
+    width: calc(15% - 100px);
     height: calc(100vh - 102px);
-    padding: 50px 20px 0px 20px;
+    padding: 50px 50px 0px 50px;
     position: fixed;
     top: 52px;
     z-index: 1;
@@ -126,6 +154,13 @@ body {
     border-width: 0 2px 0 0;
     border-color: var(--off-white);
     background-color: var(--dark-blue);
+}
+
+#sidebar-title {
+    color: var(--medium-grey);
+    font-family: var(--sans-serif);
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 #content-body {
